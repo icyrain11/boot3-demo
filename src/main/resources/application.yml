@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot3_demo?TimeZone=UTC
+    username: root
+    password: pass
+  data:
+    redis:
+      url: redis://localhost:6379
+      repositories:
+        enabled: false
